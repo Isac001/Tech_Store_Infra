@@ -1,12 +1,10 @@
-# Outputs
-
-# VPC ID
+# Show VPC ID
 output "vpc_id" {
     description = "The ID of the VPC"
     value = aws_vpc.main.id
 }
 
-# Public Subnet IDs
+# Show Public Subnet IDs
 output "public_subnet_ids" {
     description = "List of public subnet IDs"
     value = [
@@ -15,7 +13,7 @@ output "public_subnet_ids" {
     ]
 }
 
-# Private Subnet IDs
+# Show Private Subnet IDs
 output "private_subnet_ids" {
     description = "List of private subnet IDs"
     value = [
