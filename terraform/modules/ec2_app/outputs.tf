@@ -33,6 +33,7 @@ output "launch_template_id" {
   
 }
 
+# Output the name of the target group
 output "target_group_name" {
   description = "The name of the Load Balancer Target Group"
   value       = aws_lb_target_group.main.name
