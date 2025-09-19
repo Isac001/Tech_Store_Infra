@@ -21,3 +21,8 @@ output "database_generated_password" {
   sensitive   = true
 }
 
+output "application_url" {
+  description = "The URL to access the application via the Load Balancer"
+  value       = "http://${module.alb.lb_dns_name}"
+  
+}

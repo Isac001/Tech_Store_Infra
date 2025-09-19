@@ -18,3 +18,21 @@ output "security_group_id" {
   description = "The ID of the security group"
   value       = aws_security_group.main.id
 }
+
+output "target_group_arn" {
+  description = "The ARN of the Load Balancer Target Group"
+  value       = aws_lb_target_group.main.arn
+  
+}
+
+output "launch_template_id" {
+  description = "The ID of the Launch Template"
+  value       = aws_launch_template.main.id
+  
+}
+
+output "target_group_name" {
+  description = "The name of the Load Balancer Target Group"
+  value       = aws_lb_target_group.main.name
+  
+}
