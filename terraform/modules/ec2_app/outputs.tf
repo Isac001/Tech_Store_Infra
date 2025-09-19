@@ -19,12 +19,14 @@ output "security_group_id" {
   value       = aws_security_group.main.id
 }
 
+# Output the ARN of the Load Balancer Target Group
 output "target_group_arn" {
   description = "The ARN of the Load Balancer Target Group"
   value       = aws_lb_target_group.main.arn
   
 }
 
+# Output the ID of the Launch Template
 output "launch_template_id" {
   description = "The ID of the Launch Template"
   value       = aws_launch_template.main.id
