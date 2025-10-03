@@ -10,7 +10,7 @@ resource "aws_autoscaling_group" "main" {
   desired_capacity = 1
 
   # The minimum number of instances the group can have. It won't scale in below this number.
-  min_size = 1
+  min_size = 2
 
   # The maximum number of instances the group can have. It won't scale out beyond this number.
   max_size = 4
