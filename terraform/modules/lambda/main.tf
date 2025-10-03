@@ -41,7 +41,7 @@ resource "aws_lambda_function" "main" {
   timeout = 30
 
   # A hash of the deployment package. Terraform uses this to detect if the code has changed and needs to be redeployed.
-  source_code_hash = data.archive_file.lambda_zip.output_base64sha26
+  source_code_hash = data.archive_file.lambda_zip.output_base64sha256
 
   # The path to the function's deployment package (the .zip file created earlier).
   filename = data.archive_file.lambda_zip.output_path
